@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-Footio</title>
+     <!-- FontAwesome file -->
+     <link rel="stylesheet" href="vendor/css/all.min.css">
+     <!-- bootstrap file -->
+     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+     <!-- google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+     <!-- style css file -->
+     <link rel="stylesheet" href="assets/css/style.css">
+     <!-- custom file -->
+     <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+   
+    <!-- start loading -->
+    <div class="loading">
+        <div class="loader">
+          <div class="inner one"></div>
+          <div class="inner two"></div>
+          <div class="inner three"></div>
+        </div>
+    </div>
+      <!-- End loading -->
+
+<!-- start navbar -->
+<nav class="navbar navbar-expand-lg fixed-top  ">
+    <div class="container-fluid">
+      <a class="navbar-brand  me-4 order-lg-0 order-sm-2 order-2 " href="#"><img src="assets/img/logo (1).png" class=" logo" alt="footio logo"></a>
+      <button class="d-lg-none order-sm-3 order-3 border border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping text-dark fs-4 position-relative"><span class="cart-count">0</span></i></button>
+
+      <div class="offcanvas  offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title py-3 ps-3" id="offcanvasRightLabel">Cart(0)</h5>
+          <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="position-relative"></span></button>
+        </div>
+        
+          <div class="offcanvas-body text-center">
+            <p>No products in the cart.</p>
+            <a href="">Shop all products</a>
+          </div>
+     
+      </div>
+      
+      <!-- <button class="navbar-toggler order-sm-1  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fs-3 "></i>
+      </button> -->
+
+      <button class=" border border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2" aria-controls="offcanvasWithBothOptions2">        <i class="fa-solid fa-bars fs-3 "></i>
+      </button>
+         
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto  mb-2 mb-lg-0 mt-3 ">
+          <li class="nav-item mx-4 ">
+            <a class="nav-link active px-0"  aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link px-0"  href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item mx-4 ">
+            <a class="nav-link px-0" href="products.html">products</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link px-0" href="#">blog</a>
+          </li>
+
+          <li class="nav-item mx-4">
+            <a class="nav-link px-0" href="contact.html">contact</a>
+          </li>
+
+          <li class="nav-item mx-4 ">
+            <a class="nav-link " href="about.html">about us</a>
+          </li>
+
+       
+        </ul>
+        
+      
+        
+      </div>
+   
+
+      <div class="icons large mt-3 d-none d-sm-none d-lg-block   " >
+        <ul class="  d-flex">
+          <li class=" mx-3">
+            
+             <button type="button" class="border border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+
+          </li>
+          
+          <li class=" mx-2 ">
+            <button class=" border border-0 bg-transparent" type="button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-regular fa-user fs-5"></i></button>
+          </li>
+  
+          <li class="mx-2 ">
+            <a href=""> <i class="fa-regular fa-heart fs-5 position-relative"><span class="wishlist-count text-center">0</span></i></a>
+          </li>
+          <li class=" mx-3 ">
+           
+            <button class="border border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-cart-shopping fs-5 position-relative"> <span class="cart-count text-center">0</span></i></button>
+
+            
+          </li>
+        </ul>
+         </div>
+
+      <div class="icons med mt-3 fixed-bottom d-lg-none  " >
+        <ul class="  d-flex justify-content-between align-items-center text-center">
+       
+  
+          <li class="px-md-4  mx-2 text-center  ">
+           <a href="shop.html"><i class="fa-solid fa-bag-shopping fs-5"></i></a> 
+            <p class="m-0">Shop</p>
+          </li>
+           
+          <li class=" px-md-4 mx-2 text-center ">
+            <a href="register.html"> <i class="fa-regular fa-user fs-5"></i></a>
+            <p class="m-0">Account</p>
+          </li>
+          <li class="px-md-4 mx-2 text-center">
+            <button type="button" class="border border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+            <p class="m-0">Search</p>
+          </li>
+          <li class=" px-md-4 mx-2 text-center  ">
+            <a href="" > <i class="fa-regular fa-heart wishlist position-relative fs-5 "><span class="wishlist-count">0</span></i></a>
+            <p class="m-0">Wishlist</p>
+          </li>
+       
+        </ul>
+         </div>
+    </div>
+  </nav>
+  <!-- End navbar -->
+
+      <!-- start back contct -->
+<section class="back position-relative animate__animated animate__fadeInLeft animate__delay-3s" id="back">
+    <div class="title position-absolute">
+        <h1 class="text-center  ">Shop</h1>
+        <a href="index.html">Home</a><i class="fa-solid fa-angle-right px-1 ms-1"></i>
+        <span class="p-0 m-0">Contact Us</span>
+    </div>
+   <!-- <img src="assets/img/aroup-4.jpg" class="img-fluid  " alt=""> -->
+</section>
+<!-- End back contact -->
+
+<!-- start contact -->
+<section class="contact mt-5 pt-4" id="contact">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <h2 class="mb-5 pb-3">Get In Touch</h2>
+            <form action="">
+                <div class=" d-flex flex-column flex-sm-row">
+                <div class="name me-3">
+                    <label for="name" >Name</label>
+                    <input type="text" name="" id="name" class="form-control rounded-0" placeholder="Name">
+                </div>
+                <div class="email me-3">
+                    <label for="email" >Email</label>
+                    <input type="email" name="" id="email"class="form-control rounded-0" placeholder="Email address">
+                </div>
+                <div class="phone">
+                    <label for="ph" >Phone</label>
+                    <input type="tel" name="" id="ph"class="form-control rounded-0" placeholder="Phone Number">
+                </div>
+            
+                </div>
+                <div class="msg mt-3">
+                    <label for="msg" class="mb-3">Your message</label>
+                    <textarea name="" id="msg" cols="40" rows="10" class="form-control rounded-0" placeholder="Commet or message *"></textarea>
+                </div>
+                <button type="submit" class="btn mt-4 rounded-0">Send message</button>
+                
+            </form>
+        </div>
+        <div class="col-md-4">
+            <div class="contact-info ms-lg-5 ms-md-2 ">
+                <div class="contacti position-relative">
+                    <h4>Address</h4>
+                    <p class="mb-5">14 LE Gounlburn St, Sydney 1198NSA.</p>
+                </div>
+               <div class="contacti position-relative">
+                <h4>Phone</h4>
+                <p class="mb-5">(+089) 19918989</p>
+               </div>
+                <div class="contacti position-relative">
+                    <h4>Email</h4>
+                    <p class="mb-5">support@domain.com</p>
+                </div>
+              
+                <div class="contacti position-relative">
+                    <h4>Opening Time</h4>
+                    <p class="mb-5">8:00Am – 10:00Pm, Sunday Close</p>
+                </div>
+                
+                 <h4 class="mb-4">Follow Us On</h4>
+                 <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</section>
+<!-- End contact -->
+<div class="map mt-5 pt-4 mb-5 pb-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5404234826215!2d-0.11697877594061573!3d51.50330061100374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sar!2s!4v1681570805146!5m2!1sar!2s" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+
+<!-- start footer1 -->
+<section class="footer1 py-5 mt-5" id="footer1">
+  <div class="container ">
+    <div class="row ">
+      <div class="col-lg-3 col-md-6 ">
+        <div class="contact ">
+          <h4>contact</h4>
+          <div class="d-flex mt-4">
+            <p >Address:</p>
+            <span >Howard Street #2 San Francisco</span>
+          </div>
+          <div class="d-flex">
+            <p>Email :</p><span> contact@medius.com</span>
+
+          </div>
+          <div class="d-flex flex-column pb-3">
+            <p class="w-50 m-0 p-0">Open Hours :</p><span>Monday – Saturday: 8:00 am – 4:00pm</span>
+          </div>
+          <div class="d-flex">
+            <p>Sunday  :</p><span>Close</span>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-sm-0 mt-lg-0 mt-4 ">
+        <div class="help ms-lg-5">
+          <h4 class="mb-3">Help</h4>
+          <div class="d-flex flex-column">
+          <a href=""><span class="pt-2">Contact Us</span> </a>
+          <a href=""><span  class="pt-2"> About us</span></a>
+          <a href=""><span  class="pt-2">Reviews</span> </a>
+          <a href=""><span  class="pt-2"> Term of Service</span></a>
+          <a href=""> <span  class="pt-2"> Refund policy</span></a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-sm-0 mt-lg-0 mt-5">
+        <div class="services">
+          <h4 class="mb-3">services</h4>
+          <div class="d-flex flex-column">
+            <a href=""><span class="pt-2">Sale</span> </a>
+            <a href=""><span  class="pt-2"> Quick Ship</span></a>
+            <a href=""><span  class="pt-2">New Designs</span> </a>
+            <a href=""><span  class="pt-2">Protection Plan</span></a>
+            <a href=""> <span  class="pt-2">Gift Cards</span></a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-sm-0 mt-lg-0 mt-5">
+        <div class="subscribe">
+          <h4 class="mb-3">subscribe</h4>
+          <span class="mb-3">Be the first to hear about new arrivals, sales and exclusive of</span>
+          
+            <form action="">
+              <div class="d-flex align-items-center">
+                <input type="email" name="" id="" class="form-control position-relative rounded-0 border border-0" placeholder="Email address">
+              <button type="submit" value="submit" class="border border-0 bg-transparent"> <i class="fa-regular fa-envelope"></i></button>
+              </div>
+              
+            </form>
+
+           <div class="social-icon mt-4">
+             <a href=""> <i class="fa-brands fa-twitter"></i></a>
+             <a href=""><i class="fa-brands fa-instagram"></i></a> 
+             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+             <a href=""><i class="fa-brands fa-dribbble"></i></a>
+           </div>
+          
+         
+
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</section>
+<!-- End footer1 -->
+
+<!-- start footer2 -->
+<section class="footer2 pt-4 mb-md-5 mb-lg-0 mb-5 pb-4 " id="footer2">
+  <div class="container-fluid">
+    <div class=" row  ">
+          
+      <div class="col-xl-3 col-md-6 col-lg-6 col-copy">
+        <p >Copyright © 2023. All Right Reserved</p>
+
+      </div>
+      
+      <div class="col-xl-5 col-md-6 col-lg-6 col-links   d-flex justify-content-center">
+        <div class="links ">
+          <a href="" class="me-3">privacy</a>
+          <a href="" class="me-3">terms</a>
+          <a href="" class="me-3">Promo T&Cs Apply  </a>
+        </div>
+        
+      </div>
+        
+      
+      <div class="col-xl-4 col-md-12 d-flex justify-content-center">
+        <img src="assets/img/payments.png" alt="" >
+      </div>
+
+    </div>
+
+  </div>
+  <div id="progress">
+    <div id="progress-value"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
+</section>
+<!-- End footer2 -->
+
+<!--start cart shopping offcanvs -->
+<div class="offcanvas offcanvas-end offcanvas-cart " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+       <h5 class="offcanvas-title py-3 ps-3" id="offcanvasRightLabel">Cart(0)</h5>
+       <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="position-relative"></span></button>
+     </div>
+     
+       <div class="offcanvas-body text-center">
+         <p>No products in the cart.</p>
+         <a href="">Shop all products</a>
+       </div>
+</div>
+<!-- End cart shopping offcanvs  -->
+
+<!-- start account modal -->
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content py-5 px-5">
+<div class="modal-header border border-0">
+ <h1 class="modal-title fs-5 " id="exampleModalToggleLabel">Sign in</h1>
+ <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="modal-body ">
+ <form>
+   <div class="mb-3">
+   <input type="text" class="form-control rounded-0 py-3 ps-4" required id="recipient-name" placeholder="Name*">
+   </div>
+   <div class="mb-3">
+ 
+    <input type="password" class="form-control rounded-0 py-3 ps-4" required placeholder="Password*"  >
+   </div>
+  
+   <div class="d-flex justify-content-between">
+     <div class="checkrem">
+       <input type="checkbox" class="form-check-input check" id="Remember">
+       <label for="Remember" class="form-check-label remember ">Remember me</label>
+     </div>
+     <a href="" class="lost-pass" >Lost your password?</a>
+   </div>
+   
+ </form>
+ 
+</div>
+<div class="modal-footer border border-0 d-flex flex-column-reverse ">
+ <button class="btn btn-dark rounded-0 py-3 one " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">create an account</button>
+ <button class="btn btn-dark rounded-0 py-3 mb-2" type="submit">Login</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content py-4 px-5">
+<div class="modal-header border border-0">
+ <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Register</h1>
+ <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="modal-body">
+
+ <form>
+   <div class="mb-3">
+   <input type="email" class="form-control rounded-0 py-3 ps-4" required id="recipient-name2" placeholder="Email">
+   </div>
+   <div class="mb-3">
+ 
+    <input type="password" class="form-control rounded-0 py-3 ps-4" required placeholder="Password"  >
+   </div>
+  
+   
+ </form>
+
+
+</div>
+<div class="modal-footer border border-0">
+ <button class="btn btn-primary py-3 mb-2 rounded-0 border border-0" data-bs-toggle="modal">Register</button>
+
+ <button class="btn btn-primary py-3 rounded-0 border border-0 one" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">already han an account</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- End account modal -->
+
+<!-- start search modal -->
+
+<div class="modal fade search " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog m-0 ">
+<div class="modal-content border border-0 rounded-0 ps-3 ">
+<div class="modal-header border border-0">
+<p class="modal-title fs-6 text-start pt-5" id="staticBackdropLabel">What are you looking for?</p>
+
+<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="modal-body">
+<form action="" class="d-flex align-items-center justify-content-center">
+ <input type="search" class="form-control border border-0 border border-bottom rounded-0 "  placeholder="Search...">
+<a href="" class=""><i class="fa-solid fa-magnifying-glass fs-5"></i></a> 
+</form>
+
+</div>
+<div class="modal-footer border border-0">
+
+</div>
+</div>
+</div>
+</div>
+<!-- End search modal  -->
+
+<!-- start list modal -->
+<div class="offcanvas header-list offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel2">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel2"></h5>
+<button type="button" class=" border border-0" data-bs-dismiss="offcanvas" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="offcanvas-body">
+<ul class="navbar-nav me-auto  mb-2 mb-lg-0 mt-3 ">
+<li class="nav-item mx-3 mb-2 ">
+ <a class="nav-link active px-0 border border-0 border-bottom text-uppercase"  aria-current="page" href="#"><i class="fa-solid fa-house fs-5 me-3"></i>Home</a>
+</li>
+<li class="nav-item mx-3 mb-2 ">
+ <a class="nav-link px-0 border border-0 border-bottom text-uppercase"  href="shop.html"><i class="fa-solid fa-shop fs-5 me-3"></i>Shop</a>
+</li>
+<li class="nav-item mx-3 mb-2">
+ <a class="nav-link px-0 border border-0 border-bottom text-uppercase" href="products.html"><i class="fa-brands fa-shopify fs-5 me-3"></i>products</a>
+</li>
+<li class="nav-item mx-3 mb-2">
+ <a class="nav-link px-0 border border-0 border-bottom text-uppercase" href="#"><i class="fa-regular fa-pen-to-square fs-5 me-3"></i>blog</a>
+</li>
+
+<li class="nav-item mx-3 mb-2 border border-0 border-bottom text-uppercase">
+ <a class="nav-link px-0" href="contact.html"><i class="fa-solid fa-inbox me-3 fs-5"></i>contact</a>
+</li>
+
+<li class="nav-item mx-3 mb-3 ">
+ <a class="nav-link text-uppercase " href="about.html"><i class="fa-solid fa-users me-3 fs-5"></i>about us</a>
+</li>
+<li class=" text-center mt-2 list-btn"> <a href="register.html" class="btn border rounded-0 w-100 py-2 fs-6"><i class="fa-regular fa-user fs-5 pe-3"></i>Login or Register</a></li>
+</ul>
+<div class="d-flex align-items-center justify-content-center menue ">
+<div class="usd-menue me-3" >
+ <ul class="py-3 pe-4" id="usd-men">
+   <li class="border border-0 border-bottom mb-2">USD</li>
+   <li class="border border-0 border-bottom mb-2">EUR</li>
+   <li class="mb-2">NIS</li>
+ </ul>
+ <button type="button" class=" btn border border-0 m-0 text-center ms-3 position-relative " id="usd" onclick="showUsd()">USD</button>
+
+</div>
+
+<div class="en-menue">
+ <ul class="py-3 pe-4" id="en-men">
+   <li class="border border-0 border-bottom mb-2">English</li>
+   <li class="border border-0 border-bottom mb-2">France</li>
+   <li class="mb-2">Arabic</li>
+ </ul>
+ <button type="button" class=" btn border border-0 m-0 text-center ms-3 position-relative" id="en" onclick="showEn()">English</button>
+
+</div>
+</div>
+
+</div>
+</div>
+<!-- End list modal -->
+
+
+ <!-- bootstrap js  -->
+<script src="vendor/js/bootstrap.bundle.min.js"></script>
+<!-- Jquery cdn -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- wow js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- main js file -->
+ <script src="assets/js/main.js"></script>
+ <!-- custom js -->
+ <script src="assets/js/contact.js"></script>
+
+</body>
+</html>

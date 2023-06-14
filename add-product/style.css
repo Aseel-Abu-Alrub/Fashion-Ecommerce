@@ -1,0 +1,55 @@
+.swal2-icon .swal2-icon-content {
+    font-size:95px !important;
+}
+
+@media  screen and (max-width:767px) {
+    .swal2-styled.swal2-cancel{
+        position: relative;
+        top:0 !important;
+       
+    }  
+}
+
+ .product-item p{
+    font-size: 14px;
+    color: #000;
+  }
+.product-item span{
+    color: rgb(160, 160, 160)
+  }
+
+  .product-item .fader{
+    position: relative;
+   }
+   .product-item .fader.fader-hot::after{
+    content: "Hot";
+    position: absolute;
+    background-color:#AC2F2F;
+    color:white;
+    padding:3px 15px;
+    top:13px;
+    font-size: 13px;
+    left:15px;
+    cursor:default ;
+   }
+   .product-item .fader.fader-hott::before{
+    content: "Hot";
+    position: absolute;
+    background-color:#AC2F2F;
+    color:white;
+    padding:3px 15px;
+    top:19px;
+    font-size: 13px;
+    left:15px;
+    cursor:default ;
+    z-index:99;
+   }
+   .product-item .icons-link{
+    position: absolute;
+    bottom:140px !important;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+  
+   
+   }

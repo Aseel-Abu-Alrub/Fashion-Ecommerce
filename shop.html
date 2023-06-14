@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Footio</title>
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- home css (index) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <!-- slick style cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+     integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="assets/css/shop.css">
+
+</head>
+<body>
+
+<!-- start loading -->
+  <div class="loading ">
+    <div class="loader">
+      <div class="inner one"></div>
+      <div class="inner two"></div>
+      <div class="inner three"></div>
+    </div>
+  </div>
+<!-- End loading -->
+
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top   ">
+        <div class="container-fluid">
+          <a class="navbar-brand  me-4 order-lg-0 order-sm-2 order-2 " href="#"><img src="assets/img/logo (1).png" class=" logo" alt="footio logo"></a>
+          <button class="d-lg-none order-sm-3 order-3 border border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping text-dark fs-4 position-relative"><span class="cart-count">0</span></i></button>
+    
+          <div class="offcanvas  offcanvas-end d-lg-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title py-3 ps-3" id="offcanvasRightLabel">Cart(0)</h5>
+              <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="position-relative"></span></button>
+            </div>
+            
+              <div class="offcanvas-body text-center">
+                <p>No products in the cart.</p>
+                <a href="">Shop all products</a>
+              </div>
+         
+          </div>
+          
+          <!-- <button class="navbar-toggler order-sm-1  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-3 "></i>
+          </button> -->
+    
+          <button class=" border border-0 bg-transparent d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2" aria-controls="offcanvasWithBothOptions2">        <i class="fa-solid fa-bars fs-3 "></i>
+          </button>
+             
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto  mb-2 mb-lg-0 mt-3 ">
+              <li class="nav-item mx-4 ">
+                <a class="nav-link active px-0"  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link px-0"  href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item mx-4 ">
+                <a class="nav-link px-0" href="products.html">products</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link px-0" href="#">blog</a>
+              </li>
+    
+              <li class="nav-item mx-4">
+                <a class="nav-link px-0" href="contact.html">contact</a>
+              </li>
+    
+              <li class="nav-item mx-4 ">
+                <a class="nav-link " href="about.html">about us</a>
+              </li>
+    
+           
+            </ul>
+            
+          
+            
+          </div>
+       
+    
+          <div class="icons large mt-3 d-none d-sm-none d-lg-block   " >
+            <ul class="  d-flex">
+              <li class=" mx-3">
+                
+                 <button type="button" class="border border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+    
+              </li>
+              
+              <li class=" mx-2 ">
+                <button class=" border border-0 bg-transparent" type="button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-regular fa-user fs-5"></i></button>
+              </li>
+      
+              <li class="mx-2 ">
+                <a href=""> <i class="fa-regular fa-heart fs-5 position-relative"><span class="wishlist-count text-center">0</span></i></a>
+              </li>
+              <li class=" mx-3 ">
+               
+                <button class="border border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-cart-shopping fs-5 position-relative"> <span class="cart-count text-center">0</span></i></button>
+    
+                
+              </li>
+            </ul>
+             </div>
+    
+          <div class="icons med mt-3 fixed-bottom d-lg-none  " >
+            <ul class="  d-flex justify-content-between align-items-center text-center">
+           
+      
+              <li class="px-md-4  mx-2 text-center  ">
+               <a href="shop.html"><i class="fa-solid fa-bag-shopping fs-5"></i></a> 
+                <p class="m-0">Shop</p>
+              </li>
+               
+              <li class=" px-md-4 mx-2 text-center ">
+                <a href="login.html"> <i class="fa-regular fa-user fs-5"></i></a>
+                <p class="m-0">Account</p>
+              </li>
+              <li class="px-md-4 mx-2 text-center">
+                <button type="button" class="border border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+                <p class="m-0">Search</p>
+              </li>
+              <li class=" px-md-4 mx-2 text-center  ">
+                <a href="" > <i class="fa-regular fa-heart wishlist position-relative fs-5 "><span class="wishlist-count">0</span></i></a>
+                <p class="m-0">Wishlist</p>
+              </li>
+           
+            </ul>
+             </div>
+        </div>
+    </nav>
+    <!-- End navbar -->  
+
+
+    <!-- start back shop -->
+<section class="back position-relative animate__animated animate__fadeInLeft animate__delay-3s" id="back">
+    <div class="title position-absolute">
+        <h1 class="text-center  ">Shop</h1>
+        <a href="index.html">Home</a><i class="fa-solid fa-angle-right px-1 ms-1"></i>
+        <span class="p-0 m-0">Shop</span>
+    </div>
+   <!-- <img src="assets/img/aroup-4.jpg" class="img-fluid  " alt=""> -->
+</section>
+<!-- End back shop -->
+
+<!-- start category -->
+<section class="category" id="category">
+    <div class="container-fluid">
+        <div class="carousels">
+            <div class="carousels-item animate__animated animate__fadeInLeft animate__delay-2s">
+                <a href="" class="link">
+                    <img src="assets/img/Rectangle-1 (1).jpg" class="img-fluid" alt="watch" id="rec1" onclick=" border1()">
+                </a>
+                <a href=""><p class="text-center mt-3">Shoes</p></a>
+
+            </div>
+            <div class="carousels-item animate__animated animate__fadeInDown animate__delay-2s">
+                <a href="" class="link">
+                 <img src="assets/img/Rectangle-2.jpg" class="img-fluid" alt="watch" id="rec2" onclick=" border2()">
+                </a>
+                <a href=""><p class="text-center mt-3">Activewear</p></a>
+                
+            </div>
+            <div class="carousels-item animate__animated animate__fadeInUp animate__delay-2s">
+                <a href="" class="link">
+                    <img src="assets/img/Rectangle-3.jpg" class="img-fluid" alt="watch" id="rec3" onclick=" border3()">
+                </a>
+                <a href=""><p class="text-center mt-3">Shost</p></a>   
+            </div>
+            <div class="carousels-item animate__animated animate__fadeInDown animate__delay-2s">
+                <a href="" class="link">
+                    <img src="assets/img/Rectangle-4.jpg" class="img-fluid" alt="watch" id="rec4" onclick=" border4()">
+                  
+                </a>
+                <a href="">  <p class="text-center mt-3">Dress</p></a>
+               
+            </div>
+            <div class="carousels-item animate__animated animate__fadeInRight animate__delay-2s">
+                <a href="" class="link">
+                    <img src="assets/img/Rectangle-5.jpg" class="img-fluid" alt="watch" id="rec5" onclick=" border5()">
+                
+                </a>
+                <a href=""> <p class="text-center mt-3">Bags</p></a>
+            </div>
+            <div class="carousels-item">
+                <a href="" class="link">
+                    <img src="assets/img/Rectangle-6.jpg" class="img-fluid" alt="watch" id="rec6" onclick=" border6()">
+                  
+                </a>
+                <a href=""> <p class="text-center mt-3">Coats</p></a>
+            </div>
+            <div class="carousels-item">
+                <a href="" class="link">
+                    <img src="assets/img/Rectangle-7.jpg" class="img-fluid" alt="watch" id="rec7" onclick=" border7()">
+                    
+                </a>
+                <a href=""><p class="text-center mt-3">Top</p></a>
+            </div>
+           
+        </div>
+    </div>
+
+</section>
+<!-- End category -->
+
+<!-- start show product -->
+<section class="show" id="show">
+  <div class="container-fluid">
+    <div class="dropdown-center text-end   " >
+      <button class="btn rounded-0  dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Default Sorting
+      </button>
+      <ul class="dropdown-menu  ">
+        <li><a class="dropdown-item" href="#"> Default Sorting</a></li>
+        <li><a class="dropdown-item" href="#">Sort By Popularity</a></li>
+        <li><a class="dropdown-item" href="#">Sort By Average Rating</a></li>
+        <li><a class="dropdown-item" href="#">Sort By Latest</a></li>
+        <li><a class="dropdown-item" href="#">Sort By Price: Low To High</a></li>
+        <li><a class="dropdown-item" href="#">Sort By Price: High To Low</a></li>
+      </ul>
+    </div>
+    <button class="btn d-lg-none filter-btn rounded-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions33" aria-controls="offcanvasWithBothOptions33"><img src="assets/img/filtro.png" class="filter-icon" alt=""></button>
+
+       <div class="offcanvas offcanvas-start offcanvas-filter" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions33" aria-labelledby="offcanvasWithBothOptionsLabel33">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel33"></h5>
+          <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"> <span class="position-relative"></span></button>
+        </div>
+        <div class="offcanvas-body offcanvas-product">
+          <div class="product-group d-flex flex-column mb-5">
+            <h4>Categories</h4> 
+            <a href="">Activewear<span class="ms-1">(8)</span></a>
+            <a href="">Bags<span class="ms-1">(2)</span></a>
+            <a href="">Coats<span class="ms-1">(7)</span></a>
+            <a href="">Dress<span class="ms-1">(7)</span></a>
+            <a href="">Shost<span class="ms-1">(7)</span></a>
+            <a href="">Top<span class="ms-1">(9)</span></a>
+            <a href="">Shose<span class="ms-1">(4)</span></a>
+          </div>
+          <div class="filter-price mt-4">
+            <h4 >Price</h4>
+            
+            <div class="price-field">
+              
+              <a href="#" class="mb-3" >Reset</a>
+                <form action="">
+                  <input type="range"  min="19" max="150" id="min-price" value="19" step="1" value="0">       
+                  <input type="range"  min="19" max="150" id="max-price" value="150" step="1" value="100">   
+                </form>
+               
+            </div>
+            <div class="mt-5 range-info">
+              <span>Range :</span>
+              <span id="min-price-txt">$19.00</span>
+              <span>-</span>
+              <span id="max-price-txt">$150.00</span>
+              
+            </div>
+          </div>
+    
+          <div class="colors mt-5">
+            <h4>Color</h4>
+            <div class="color-list mt-5 ps-2">
+              <div class="d-flex mb-3 mt-2 color-style align-items-center">
+                <div class="Beige">
+                </div>
+                <span class="ms-5">Beige(7)</span>
+              </div>
+             
+              <div class="d-flex mb-3 color-style  align-items-center">
+                <div class="Black"></div>
+                <span class="ms-5">Black(10)</span>
+              </div>
+              
+               <div class="d-flex mb-3 color-style  align-items-center">
+                <div class="Blue"></div>
+                <span class="ms-5">Blue(4)</span>
+               </div>
+              
+               <div class="d-flex mb-3 color-style  align-items-center">
+                <div class="Brick"></div>
+                <span class="ms-5">Brick(1)</span>
+               </div>
+              
+               <div class="d-flex mb-3 color-style  align-items-center">
+                <div class="green">
+                </div>
+                <span class="ms-5">Green(7)</span>
+               </div>
+             
+               <div class="d-flex mb-3 color-style  align-items-center">
+                <div class="pink"></div>
+                <span class="ms-5">Pink(6)</span>
+               </div>
+              
+               <div class="d-flex mb-3 color-style  align-items-center">
+                <div class="red"></div>
+                <span class="ms-5">Red(4)</span>
+               </div>
+              
+               <div class="d-flex mb-3 color-style  align-items-center" >
+                <div class="white"></div>
+                <span class="ms-5">White(3)</span>
+               </div>
+             
+               <div class="d-flex mb-3 color-style  align-items-center">
+                <div class="yellow"></div>
+                <span class="ms-5">Yellow</span>
+               </div>
+             
+            </div>
+          </div>
+          <div class="size mt-5 pt-3">
+            <h4>Size</h4>
+            <div class="size-list my-5">
+              <span>L</span>
+              <span>M</span>
+              <span>S</span>
+              <span>XL</span>
+            </div>
+          
+          </div>
+    
+        <div class="bwp-filter bwp-filter-brand mt-5">
+            <h4>Brand</h4>
+            <div class=" m-0 p-0 content_filter">
+              <ul id="pa_brand" class=" m-0 p-0 mt-5 filter_brand_product">
+                <li>
+                  <span><input value="brand-1" name="filter_brand" type="checkbox" >
+                </span><label class="count">Brand 1<mark class="bg-transparent">(1)</mark></label>
+              </li>
+                 <li><span><input value="brand-2" name="filter_brand" type="checkbox">
+                </span><label class="count">Brand 2<mark class="bg-transparent">(1)</mark></label>
+              </li>
+               <li><span><input value="brand-3" name="filter_brand" type="checkbox">
+              </span><label class="count">Brand 3<mark class="bg-transparent">(1)</mark></label>
+            </li> 
+            <li><span><input value="brand-4" name="filter_brand" type="checkbox">
+            </span><label class="count">Brand 4<mark class="bg-transparent">(1)</mark></label>
+          </li> 
+          <li><span><input value="brand-5" name="filter_brand" type="checkbox">
+          </span><label class="count">Brand 5<mark class="bg-transparent">(1)</mark></label>
+        </li> 
+      </ul>
+    </div>
+        </div>
+    
+        <div class="feature-product mt-5">
+          <h4 class="mb-5">Feature Product</h4>
+          <div class="d-flex  productt ">
+            <div class="product-list">
+              <a href=""><img src="assets/img/Rectangle-108.jpg" class="" alt=""></a>
+           </div>
+           <div class="product-info w-100 ms-3 ">
+            <div class="product-start mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            
+             <a href="" class="mt-4"><h5>Crest Pocket Tee</h5></a>
+             <p >$19.95</p>
+           </div>
+          </div>
+          <div class="d-flex productt mt-3 mb-3">
+            <div class="product-list">
+              <a href=""><img src="assets/img/Rectangle-106.jpg" class="" alt=""></a>
+           </div>
+           <div class="product-info w-100 ms-3">
+            <div class="product-start mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            
+             <a href="" class="mt-4"><h5>ALD/ Woolrich Waxed Patch Hat</h5></a>
+             <p>$19.95</p>
+           </div>
+          </div>
+          <div class="d-flex productt ">
+            <div class="product-list">
+              <a href=""><img src="assets/img/Rectangle-102.jpg" class="" alt=""></a>
+           </div>
+           <div class="product-info ms-3 w-100">
+            <div class="product-start mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            
+             <a href="" class="mt-4"><h5>Crest Pocket Tee</h5></a>
+             <del>$130.00</del><p>$100.00</p>
+           </div>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-3 d-sm-none d-none d-lg-block">
+        <div class="product-group d-flex flex-column mb-5">
+        <h4>Categories</h4>
+        <a href="">Activewear<span class="ms-1">(8)</span></a>
+        <a href="">Bags<span class="ms-1">(2)</span></a>
+        <a href="">Coats<span class="ms-1">(7)</span></a>
+        <a href="">Dress<span class="ms-1">(7)</span></a>
+        <a href="">Shost<span class="ms-1">(7)</span></a>
+        <a href="">Top<span class="ms-1">(9)</span></a>
+        <a href="">Shose<span class="ms-1">(4)</span></a>
+      </div>
+      <div class="filter-price mt-4">
+        <h4 >Price</h4>
+        
+        <div class="price-field">
+          
+          <a href="#" class="mb-3" >Reset</a>
+            <form action="">
+              <input type="range"  min="19" max="150" id="min-price" value="19" step="1" value="0">       
+              <input type="range"  min="19" max="150" id="max-price" value="150" step="1" value="100">   
+            </form>
+           
+        </div>
+        <div class="mt-5 range-info">
+          <span>Range :</span>
+          <span id="min-price-txt">$19.00</span>
+          <span>-</span>
+          <span id="max-price-txt">$150.00</span>
+          
+        </div>
+      </div>
+
+      <div class="colors mt-5">
+        <h4>Color</h4>
+        <div class="color-list mt-5 ps-2">
+          <div class="d-flex mb-3 mt-2 color-style align-items-center">
+            <div class="Beige">
+            </div>
+            <span class="ms-5">Beige(7)</span>
+          </div>
+         
+          <div class="d-flex mb-3 color-style  align-items-center">
+            <div class="Black"></div>
+            <span class="ms-5">Black(10)</span>
+          </div>
+          
+           <div class="d-flex mb-3 color-style  align-items-center">
+            <div class="Blue"></div>
+            <span class="ms-5">Blue(4)</span>
+           </div>
+          
+           <div class="d-flex mb-3 color-style  align-items-center">
+            <div class="Brick"></div>
+            <span class="ms-5">Brick(1)</span>
+           </div>
+          
+           <div class="d-flex mb-3 color-style  align-items-center">
+            <div class="green">
+            </div>
+            <span class="ms-5">Green(7)</span>
+           </div>
+         
+           <div class="d-flex mb-3 color-style  align-items-center">
+            <div class="pink"></div>
+            <span class="ms-5">Pink(6)</span>
+           </div>
+          
+           <div class="d-flex mb-3 color-style  align-items-center">
+            <div class="red"></div>
+            <span class="ms-5">Red(4)</span>
+           </div>
+          
+           <div class="d-flex mb-3 color-style  align-items-center" >
+            <div class="white"></div>
+            <span class="ms-5">White(3)</span>
+           </div>
+         
+           <div class="d-flex mb-3 color-style  align-items-center">
+            <div class="yellow"></div>
+            <span class="ms-5">Yellow</span>
+           </div>
+         
+        </div>
+      </div>
+      <div class="size mt-5 pt-3">
+        <h4>Size</h4>
+        <div class="size-list my-5">
+          <span>L</span>
+          <span>M</span>
+          <span>S</span>
+          <span>XL</span>
+        </div>
+      
+      </div>
+
+    <div class="bwp-filter bwp-filter-brand mt-5">
+        <h4>Brand</h4>
+        <div class=" m-0 p-0 content_filter">
+          <ul id="pa_brand" class=" m-0 p-0 mt-5 filter_brand_product">
+            <li>
+              <span><input value="brand-1" name="filter_brand" type="checkbox" >
+            </span><label class="count">Brand 1<mark class="bg-transparent">(1)</mark></label>
+          </li>
+             <li><span><input value="brand-2" name="filter_brand" type="checkbox">
+            </span><label class="count">Brand 2<mark class="bg-transparent">(1)</mark></label>
+          </li>
+           <li><span><input value="brand-3" name="filter_brand" type="checkbox">
+          </span><label class="count">Brand 3<mark class="bg-transparent">(1)</mark></label>
+        </li> 
+        <li><span><input value="brand-4" name="filter_brand" type="checkbox">
+        </span><label class="count">Brand 4<mark class="bg-transparent">(1)</mark></label>
+      </li> 
+      <li><span><input value="brand-5" name="filter_brand" type="checkbox">
+      </span><label class="count">Brand 5<mark class="bg-transparent">(1)</mark></label>
+    </li> 
+  </ul>
+</div>
+    </div>
+
+    <div class="feature-product mt-5">
+      <h4 class="mb-5">Feature Product</h4>
+      <div class="d-flex  productt ">
+        <div class="product-list">
+          <a href=""><img src="assets/img/Rectangle-108.jpg" class="" alt=""></a>
+       </div>
+       <div class="product-info w-100 ms-3 ">
+        <div class="product-start mb-2">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        
+         <a href="" class="mt-4"><h5>Crest Pocket Tee</h5></a>
+         <p >$19.95</p>
+       </div>
+      </div>
+      <div class="d-flex productt mt-3 mb-3">
+        <div class="product-list">
+          <a href=""><img src="assets/img/Rectangle-106.jpg" class="" alt=""></a>
+       </div>
+       <div class="product-info w-100 ms-3">
+        <div class="product-start mb-2">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        
+         <a href="" class="mt-4"><h5>ALD/ Woolrich Waxed Patch Hat</h5></a>
+         <p>$19.95</p>
+       </div>
+      </div>
+      <div class="d-flex productt ">
+        <div class="product-list">
+          <a href=""><img src="assets/img/Rectangle-102.jpg" class="" alt=""></a>
+       </div>
+       <div class="product-info ms-3 w-100">
+        <div class="product-start mb-2">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        
+         <a href="" class="mt-4"><h5>Crest Pocket Tee</h5></a>
+         <div class="d-flex">
+          <del>$130.00</del><p>$100.00</p>
+         </div>
+        
+       </div>
+      </div>
+      
+    </div>
+       </div>
+    <div class="col-lg-9">
+      <div class="row mt-5 pt-5" >
+        <p class="show-para">Showing 1–24 of 27 item(s)</p>
+        <div class="col-lg-4 col-6 ">
+          <div class="product-item text-center position-relative ">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader  ">
+              <img src="assets/img/Rectangle-9-600x600.jpg" class="w-100 img-fluid  " alt="" >
+              <img src="assets/img/Rectangle-20-600x600.jpg" class="w-100 img-fluid  " alt="">
+
+              <p class="m-0 p-0 mt-3"> ALD / Drake’s Integral Collar Sweater</p>    
+            </a>  
+            <div class="icons-link mb-3 mb-md-0 mb-lg-0  ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a> 
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center "><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+
+             <span>$20.00</span>
+           
+          </div>
+        </div>
+        <div class="col-lg-4 col-6    ">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot fader-pre">
+              <img src="assets/img/Rectangle-13-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-12-600x600.jpg" class="w-100 img-fluid" alt="">
+              <p class="m-0 p-0 mt-3"> ALD / Drake’s Ribbed Knit Beanie</p>
+            </a>
+            <div class="icons-link  ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mt-4 pt-2 mt-lg-0 pt-lg-0">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-51-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-52-600x600.jpg" class="w-100 img-fluid" alt="">
+              
+
+
+             <p class="m-0 p-0 mt-3">ALD / NB P550 Basketball Oxfords</p>
+            </a>
+            <div class="icons-link mb-lg-0  ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mt-4 pt-2">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader" >
+              <img src="assets/img/Rectangle-27-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-26-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">ALD / New Balance Rainier</p>
+            </a>
+            <div class="icons-link mb-0 ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item  text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot">
+              <img src="assets/img/Rectangle-105-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-106-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">ALD / Woolrich Waxed Patch Hat</p>
+            </a>
+            <div class="icons-link  ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot " id="Hoodie">
+              <img src="assets/img/Rectangle-87-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-95-600x600.jpg" class="w-100 img-fluid" alt="" id="imggray">
+              <img src="assets/img/Rectangle-92-600x600.jpg" class=" shirtyellow" alt="watch" id="imgyellow">
+              <img src="assets/img/Rectangle-90-600x600.jpg" class="shirtblack" alt="watch" id="imgblack">
+              <img src="assets/img/Rectangle-94-600x600.jpg" class=" shirtbrown" alt="watch" id="imgbrown">
+             <p class="m-0 p-0 mt-3">ALD Uniform Hoodie</p>
+            </a>
+            <div class="icons-link mb-lg-5 mb-md-4   hoodi-icons">
+              <a href="" data-tooltip="View Products" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+
+             <span>$120.00 – $150.00</span>
+             <div class="colors ms-5">
+              <span  id="yellow" onclick="display(id)" data-tooltip="Yellow" ></span>
+              <span id="black" onclick="display(id)" data-tooltip="black"></span>
+              <span id="brown" onclick="display(id)" data-tooltip="Beige" ></span>
+              <span id="gray" onclick="display(id)" data-tooltip="Gray" ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-37-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-38-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">ALD Uniform Tee</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-80-1-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-75-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">Aran Knit Polo Cardigan</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot">
+              <img src="assets/img/Rectangle-42-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-44-600x600.jpg" class="w-100 img-fluid" alt="">
+              <p id="demo2" onload="countdownTimeStart() " class="hatcounter"></p>
+
+             <p class="m-0 p-0 mt-3">Brushed Crest Bucket Hat</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot">
+              <img src="assets/img/Rectangle-34-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-35-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">Coppola Sunglasses</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item   text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader" id="fadershirt">
+              <img src="assets/img/Rectangle-73-600x600.jpg" class="w-100 img-fluid whiteshirt" alt="" id="imgwhite">
+              <img src="assets/img/Rectangle-69-600x600.jpg" class="w-100 img-fluid" alt="" id="imgblk">
+              <img src="assets/img/Rectangle-74-600x600.jpg" class="w-100 img-fluid" alt="" id="imgred">
+             
+             
+             <p class="m-0 p-0 mt-3">Crest Crewneck Sweatshirt</p>
+            </a>
+            <div class="icons-link mb-5">
+              <a href="" data-tooltip="View Products" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+             <div class="colors colors2 ms-4">
+              <span  id="white" onclick="display2(id)" data-tooltip="White" ></span>
+              <span id="red" onclick="display2(id)" data-tooltip="Red"></span>
+              <span id="blk" onclick="display2(id)" data-tooltip="Black" ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot">
+              <img src="assets/img/Rectangle-53-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-49-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">Crest Piqué Polo</p>
+            </a>
+            <div class="icons-link">
+              <a href="" data-tooltip="View Products" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+         
+        
+        <div class="col-lg-4 col-6  ">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot ">
+              <img src="assets/img/Rectangle-54-600x600.jpg" class="w-100 img-fluid" alt="" >
+              <img src="assets/img/Rectangle-55-600x600.jpg" class="w-100 img-fluid" alt="" id="tgrn">
+              <img src="assets/img/Rectangle-94-600x600.jpg" class="w-100 img-fluid brickk" alt="" id="tbrick">
+              <img src="assets/img/Rectangle-59-600x600.jpg" class="w-100 img-fluid brickk" alt="" id="tblack">
+
+
+              <p id="demo3" onload="countdownTimeStart2() " class="hatcounter"></p>
+              <p class="m-0 p-0 mt-3"> Double Unisphere Hoodie</p>
+            </a>
+            <div class="icons-link  mb-5">
+              <a href="" data-tooltip="Select Options" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+             <div class="colors colors4 ms-4">
+              <span  id="brick" onclick="display3(id)"  data-tooltip="Brick" ></span>
+              <span id="blackk" onclick="display3(id)" data-tooltip="Black"></span>
+              <span id="greenn" onclick="display3(id)" data-tooltip="Green" ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 ">
+          <div class="product-item product-item2 text-center position-relative ">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot">
+              <img src="assets/img/Rectangle-110-600x600.jpg" class="w-100 img-fluid  " alt="" id="tred">
+              <img src="assets/img/Rectangle-108-600x600.jpg" class="w-100 img-fluid  " alt="" id="tbrown">
+              <img src="assets/img/Rectangle-113-600x600.jpg" class="w-100 img-fluid Tshirt " alt="" id="tblue">
+
+
+              <p class="m-0 p-0 mt-3"> Crest Pocket Tee</p>    
+            </a>  
+            <div class="icons-link  mb-5  ">
+              <a href="" data-tooltip="View Products" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a> 
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$20.00</span>
+             <div class="colors colors3 ms-4">
+              <span  id="blue" onclick="displayt(id)"  data-tooltip="Blue" ></span>
+              <span id="beige" onclick="displayt(id)" data-tooltip="Beige"></span>
+              <span id="redd" onclick="displayt(id)" data-tooltip="Red" ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mt-4 pt-2 mt-lg-0 pt-lg-0">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-96-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-97-600x600.jpg" class="w-100 img-fluid" alt="">
+
+
+             <p class="m-0 p-0 mt-3">Fleece Beret</p>
+            </a>
+            <div class="icons-link mb-3 mb-lg-0  ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader out-stock" >
+              <img src="assets/img/Rectangle-57-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-58-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">Gallo Sunglasses</p>
+            </a>
+            <div class="icons-link  ">
+              <a href="" data-tooltip="Read more" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-67-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-68-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">Knit Crewneck Vest</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$18.00</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot " id="Hoodie">
+              <img src="assets/img/Rectangle-82-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-83-600x600.jpg" class="w-100 img-fluid" alt="" >
+              
+             <p class="m-0 p-0 mt-3">Marina Mockneck Sweater</p>
+            </a>
+            <div class="icons-link mb-0 hoodi-icons2">
+              <a href="" data-tooltip="View Products" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.00</span>
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-70-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-71-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3"> Marled Cardigan</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader sale" sale-tooltip="-25%">
+              <img src="assets/img/Rectangle-2-600x600 (1).jpg" class="w-100 img-fluid" alt="" id="man">
+              <img src="assets/img/Rectangle-1-600x600 (1).jpg" class="w-100 img-fluid" alt="" id="orange">
+              <img src="assets/img/Rectangle-4-600x600.jpg" class="w-100 img-fluid brickk" alt="" id="ggreen">
+              <img src="assets/img/Rectangle-5-600x600.jpg" class="w-100 img-fluid brickk " alt="" id="whitee">
+              <img src="assets/img/Rectangle-6-600x600.jpg" class="w-100 img-fluid brickk" alt="" id="blaack">
+             <p class="m-0 p-0 mt-3">Merino Waffle Crewneck Sweater</p>
+            </a>
+            <div class="icons-link mb-4 pb-3 ">
+              <a href="" data-tooltip="Select Options" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$100.00 – $150.00</span>
+             <div class="size ">
+              <div class="size-list mt-3">
+                <span id="L" >L</span>
+                <span id="M" >M</span>
+                <span id="S" >S</span>
+                <span id="XL">XL</span>
+              </div>
+            
+            
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-46-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-47-600x600.jpg" class="w-100 img-fluid" alt="">
+      
+
+             <p class="m-0 p-0 mt-3">Micro Cord Carpenter Pant</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader " sale-tooltip="-20%">
+              <img src="assets/img/Rectangle-32-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-30-600x600.jpg" class="w-100 img-fluid" alt="">
+             <p class="m-0 p-0 mt-3">Micro Cord Pant</p>
+            </a>
+            <div class="icons-link mb-4 pb-3 ">
+              <a href="" data-tooltip="Select Options" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$90.00 – $120.00</span>
+             <div class="colors  ms-4">
+              <span  data-tooltip="Yellow" ></span>
+              <span  data-tooltip="Black"></span>
+              <span  data-tooltip="Beige" ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2  text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot" >
+              <img src="assets/img/Rectangle-40-600x600.jpg" class="w-100 img-fluid " alt="" >
+              <img src="assets/img/Rectangle-41-600x600.jpg" class="w-100 img-fluid" alt="" >
+             
+             
+             <p class="m-0 p-0 mt-3">Micro Cord Weekender Tote Bag</p>
+            </a>
+            <div class="icons-link mb-sm-0 mb-md-0">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item2 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot">
+              <img src="assets/img/Rectangle-76-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-72-600x600.jpg" class="w-100 img-fluid" alt="">
+              <p id="demo4" onload="countdownTimeStart3() " class="hatcounter"></p>
+             <p class="m-0 p-0 mt-3">New Balance MADE in USA 990v3</p>
+            </a>
+            <div class="icons-link mb-4 pb-4">
+              <a href="" data-tooltip="View Products" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$80.00 – $120.00</span>
+             <div class="colors  ms-4">
+              <span style="background-color:white" data-tooltip="White"  ></span>
+              <span  data-tooltip="Black"></span>
+              <span  data-tooltip="Beige" ></span>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item3 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hott " sale-tooltipp="-30%">
+              <img src="assets/img/Rectangle-103-600x600.jpg" class="w-100 img-fluid" alt="" id="mman">
+              <img src="assets/img/Rectangle-102.jpg" class="w-100 img-fluid" alt="" id="tbrwn">
+              <img src="assets/img/Rectangle-100-600x600.jpg" class="w-100 img-fluid brickk" alt="" id="tblk">
+              <img src="assets/img/Rectangle-101-600x600.jpg" class="w-100 img-fluid brickk" alt="" id="tpink">
+
+
+             <p class="m-0 p-0 mt-3">Unisphere Full-Zip Fleece Jacket </p>
+            </a>
+            <div class="icons-link mb-4 pb-4">
+              <a href="" data-tooltip="Select options" ><i class="fa-solid fa-arrow-right"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+           
+             <span> <del style="font-size:14px;">$130.00</del> $100.00</span>
+             <div class="colors colorss  ms-4">
+              <span id="pink" style="background-color:#FFC0CB" data-tooltip="Pink"  ></span>
+              <span id="blkk" data-tooltip="Black"></span>
+              <span id="beigee" data-tooltip="Beige" ></span>
+            </div>
+             
+          </div>
+        </div>
+        <div class="col-lg-4 col-6  mt-4 pt-2" >
+          <div class="product-item product-item3 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader fader-hot">
+              <img src="assets/img/Rectangle-1-600x600.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-2-600x600.jpg" class="w-100 img-fluid" alt="">
+             
+             <p class="m-0 p-0 mt-3">VEJA Venturi Trainers</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.57</span>
+            
+          </div>
+        </div>
+      
+        <div class="no-product d-flex align-items-center">
+          <i class="fa-regular fa-message"></i>
+          <p>No Products Were Found Matching Your Selection</p>
+        </div>
+        <!-- <div class="col-lg-4 col-6  mt-4 pt-2">
+          <div class="product-item product-item3 text-center position-relative">
+            <a href="" data-tooltip="Wishlist" class="sm-wish"><i class="fa-regular fa-heart"></i></a>
+            <a href="" class="fader">
+              <img src="assets/img/Rectangle-63-1-600x313.jpg" class="w-100 img-fluid" alt="">
+              <img src="assets/img/Rectangle-60-1-600x313.jpg" class="w-100 img-fluid" alt="">
+
+             
+             <p class="m-0 p-0 mt-3">ZLD Uniform Hat</p>
+            </a>
+            <div class="icons-link ">
+              <a href="" data-tooltip="Add to Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="" data-tooltip="Wishlist"><i class="fa-regular fa-heart"></i></a>
+              <a href="" data-tooltip="Compare"><i class="fa-solid fa-arrows-split-up-and-left"></i></a>
+              <a href="" data-tooltip="Quick View" class="d-none d-sm-none d-lg-inline-flex align-items-center justify-content-center mt-3"><i class="fa-regular fa-eye d-none d-sm-none d-lg-block"></i></a>
+            </div>
+             <span>$19.95</span>
+            
+          </div>
+        </div> -->
+        <div class="load ">
+          <p>Showing 1–12 of 27 item(s)</p>
+        <div class="show-progress"><span></span></div>
+        <div class="col-12  mt-4  d-flex justify-content-center position-relative custom-btn">
+          <div class="spinner  "></div>
+          <button class="btn btn-dark rounded-0 load-more  "> Load More</button>
+        </div>
+        </div>
+        <div class="load load2 ">
+          <p>Showing 1–12 of 27 item(s)</p>
+        <div class="show-progress show-progress2"><span></span></div>
+        <div class="col-12  mt-4  d-flex justify-content-center position-relative custom-btn">
+          <div class="spinner  "></div>
+          <button class="btn btn-dark rounded-0 load-more load-more2 "> Load More</button>
+        </div>
+        </div>
+        
+
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End show product -->
+
+<!-- <div class="col-md-9">
+  <div class="">
+    <div class="card-body">
+      <div class="row" id="display-items-div">
+           
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class=" col-12 col-md-2">
+      <div class=" px-2">
+        
+       
+        <div class="card-body">
+         
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div> -->
+
+
+
+
+
+
+<!-- start footer1 -->
+<section class="footer1 py-5 mt-5" id="footer1">
+  <div class="container ">
+    <div class="row d-flex">
+      <div class="col-lg-3 col-md-6 ">
+        <div class="contact ">
+          <h4>contact</h4>
+          <div class="d-flex mt-4">
+            <p >Address:</p>
+            <span >Howard Street #2 San Francisco</span>
+          </div>
+          <div class="d-flex">
+            <p>Email :</p><span> contact@medius.com</span>
+
+          </div>
+          <div class="d-flex flex-column pb-3">
+            <p class="w-50 m-0 p-0">Open Hours :</p><span>Monday – Saturday: 8:00 am – 4:00pm</span>
+          </div>
+          <div class="d-flex">
+            <p>Sunday  :</p><span>Close</span>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-sm-0 mt-lg-0 mt-4 ">
+        <div class="help ms-lg-5">
+          <h4 class="mb-3">Help</h4>
+          <div class="d-flex flex-column">
+          <a href=""><span class="pt-2">Contact Us</span> </a>
+          <a href=""><span  class="pt-2"> About us</span></a>
+          <a href=""><span  class="pt-2">Reviews</span> </a>
+          <a href=""><span  class="pt-2"> Term of Service</span></a>
+          <a href=""> <span  class="pt-2"> Refund policy</span></a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-sm-0 mt-lg-0 mt-5">
+        <div class="services">
+          <h4 class="mb-3">services</h4>
+          <div class="d-flex flex-column">
+            <a href=""><span class="pt-2">Sale</span> </a>
+            <a href=""><span  class="pt-2"> Quick Ship</span></a>
+            <a href=""><span  class="pt-2">New Designs</span> </a>
+            <a href=""><span  class="pt-2">Protection Plan</span></a>
+            <a href=""> <span  class="pt-2">Gift Cards</span></a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-sm-0 mt-lg-0 mt-5">
+        <div class="subscribe">
+          <h4 class="mb-3">subscribe</h4>
+          <span class="mb-3">Be the first to hear about new arrivals, sales and exclusive of</span>
+          
+            <form action="">
+              <div class="d-flex align-items-center">
+                <input type="email" name="" id="" class="form-control position-relative rounded-0 border border-0" placeholder="Email address">
+              <button type="submit" value="submit" class="border border-0 bg-transparent"> <i class="fa-regular fa-envelope"></i></button>
+              </div>
+              
+            </form>
+
+           <div class="social-icon mt-4">
+             <a href=""> <i class="fa-brands fa-twitter"></i></a>
+             <a href=""><i class="fa-brands fa-instagram"></i></a> 
+             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+             <a href=""><i class="fa-brands fa-dribbble"></i></a>
+           </div>
+          
+         
+
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</section>
+<!-- End footer1 -->
+
+<!-- start footer2 -->
+<section class="footer2 pt-4 mb-md-5 mb-lg-0 mb-5 pb-4 " id="footer2">
+  <div class="container-fluid">
+    <div class=" row  ">
+          
+      <div class="col-xl-3 col-md-6 col-lg-6 col-copy">
+        <p >Copyright © 2023. All Right Reserved</p>
+
+      </div>
+      
+      <div class="col-xl-5 col-md-6 col-lg-6 col-links   d-flex justify-content-center">
+        <div class="links ">
+          <a href="" class="me-3">privacy</a>
+          <a href="" class="me-3">terms</a>
+          <a href="" class="me-3">Promo T&Cs Apply  </a>
+        </div>
+        
+      </div>
+        
+      
+      <div class="col-xl-4 col-md-12 d-flex justify-content-center">
+        <img src="assets/img/payments.png" alt="" >
+      </div>
+
+    </div>
+
+  </div>
+  <div id="progress">
+    <div id="progress-value"><i class="fa-solid fa-arrow-up"></i></div>
+  </div>
+</section>
+<!-- End footer2 -->
+
+
+
+ <!--start cart shopping offcanvs -->
+ <div class="offcanvas offcanvas-end offcanvas-cart " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+       <h5 class="offcanvas-title py-3 ps-3" id="offcanvasRightLabel">Cart(0)</h5>
+       <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="position-relative"></span></button>
+     </div>
+     
+       <div class="offcanvas-body text-center">
+         <p>No products in the cart.</p>
+         <a href="">Shop all products</a>
+       </div>
+</div>
+<!-- End cart shopping offcanvs  -->
+
+<!-- start account modal -->
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content py-5 px-5">
+<div class="modal-header border border-0">
+ <h1 class="modal-title fs-5 " id="exampleModalToggleLabel">Sign in</h1>
+ <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="modal-body ">
+ <form>
+   <div class="mb-3">
+   <input type="text" class="form-control rounded-0 py-3 ps-4" required id="recipient-name" placeholder="Name*">
+   </div>
+   <div class="mb-3">
+ 
+    <input type="password" class="form-control rounded-0 py-3 ps-4" required placeholder="Password*"  >
+   </div>
+  
+   <div class="d-flex justify-content-between">
+     <div class="checkrem">
+       <input type="checkbox" class="form-check-input check" id="Remember">
+       <label for="Remember" class="form-check-label remember ">Remember me</label>
+     </div>
+     <a href="" class="lost-pass" >Lost your password?</a>
+   </div>
+   
+ </form>
+ 
+</div>
+<div class="modal-footer border border-0 d-flex flex-column-reverse ">
+ <button class="btn btn-dark rounded-0 py-3 one " data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">create an account</button>
+ <button class="btn btn-dark rounded-0 py-3 mb-2" type="submit">Login</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content py-4 px-5">
+<div class="modal-header border border-0">
+ <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Register</h1>
+ <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="modal-body">
+
+ <form>
+   <div class="mb-3">
+   <input type="email" class="form-control rounded-0 py-3 ps-4" required id="recipient-name2" placeholder="Email">
+   </div>
+   <div class="mb-3">
+ 
+    <input type="password" class="form-control rounded-0 py-3 ps-4" required placeholder="Password"  >
+   </div>
+  
+   
+ </form>
+
+
+</div>
+<div class="modal-footer border border-0">
+ <button class="btn btn-primary py-3 mb-2 rounded-0 border border-0" data-bs-toggle="modal">Register</button>
+
+ <button class="btn btn-primary py-3 rounded-0 border border-0 one" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">already han an account</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- End account modal -->
+
+<!-- start search modal -->
+
+<div class="modal fade search " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog m-0 ">
+<div class="modal-content border border-0 rounded-0 ps-3 ">
+<div class="modal-header border border-0">
+<p class="modal-title fs-6 text-start pt-5" id="staticBackdropLabel">What are you looking for?</p>
+
+<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="modal-body">
+<form action="" class="d-flex align-items-center justify-content-center">
+ <input type="search" class="form-control border border-0 border border-bottom rounded-0 "  placeholder="Search...">
+<a href="" class=""><i class="fa-solid fa-magnifying-glass fs-5"></i></a> 
+</form>
+
+</div>
+<div class="modal-footer border border-0">
+
+</div>
+</div>
+</div>
+</div>
+<!-- End search modal  -->
+
+<!-- start list modal -->
+<div class="offcanvas header-list offcanvas-start d-lg-none" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel2">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel2"></h5>
+<button type="button" class=" border border-0" data-bs-dismiss="offcanvas" aria-label="Close"><span class="position-relative"></span></button>
+</div>
+<div class="offcanvas-body">
+<ul class="navbar-nav me-auto  mb-2 mb-lg-0 mt-3 ">
+<li class="nav-item mx-3 mb-2 ">
+ <a class="nav-link active px-0 border border-0 border-bottom text-uppercase"  aria-current="page" href="index.html"><i class="fa-solid fa-house fs-5 me-3"></i>Home</a>
+</li>
+<li class="nav-item mx-3 mb-2 ">
+ <a class="nav-link px-0 border border-0 border-bottom text-uppercase"  href="shop.html"><i class="fa-solid fa-shop fs-5 me-3"></i>Shop</a>
+</li>
+<li class="nav-item mx-3 mb-2">
+ <a class="nav-link px-0 border border-0 border-bottom text-uppercase" href="products.html"><i class="fa-brands fa-shopify fs-5 me-3"></i>products</a>
+</li>
+<li class="nav-item mx-3 mb-2">
+ <a class="nav-link px-0 border border-0 border-bottom text-uppercase" href="#"><i class="fa-regular fa-pen-to-square fs-5 me-3"></i>blog</a>
+</li>
+
+<li class="nav-item mx-3 mb-2 border border-0 border-bottom text-uppercase">
+ <a class="nav-link px-0" href="contact.html"><i class="fa-solid fa-inbox me-3 fs-5"></i>contact</a>
+</li>
+
+<li class="nav-item mx-3 mb-3 ">
+ <a class="nav-link text-uppercase " href="about.html"><i class="fa-solid fa-users me-3 fs-5"></i>about us</a>
+</li>
+<li class=" text-center mt-2 list-btn"> <a href="register.html" class="btn border rounded-0 w-100 py-2 fs-6"><i class="fa-regular fa-user fs-5 pe-3"></i>Login or Register</a></li>
+</ul>
+<div class="d-flex align-items-center justify-content-center menue ">
+<div class="usd-menue me-3" >
+ <ul class="py-3 pe-4" id="usd-men">
+   <li class="border border-0 border-bottom mb-2">USD</li>
+   <li class="border border-0 border-bottom mb-2">EUR</li>
+   <li class="mb-2">NIS</li>
+ </ul>
+ <button type="button" class=" btn border border-0 m-0 text-center ms-3 position-relative " id="usd" onclick="showUsd()">USD</button>
+
+</div>
+
+<div class="en-menue">
+ <ul class="py-3 pe-4" id="en-men">
+   <li class="border border-0 border-bottom mb-2">English</li>
+   <li class="border border-0 border-bottom mb-2">France</li>
+   <li class="mb-2">Arabic</li>
+ </ul>
+ <button type="button" class=" btn border border-0 m-0 text-center ms-3 position-relative" id="en" onclick="showEn()">English</button>
+
+</div>
+</div>
+
+</div>
+</div>
+<!-- End list modal -->
+
+
+
+<!-- Jquery cdn -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+<!-- slick script cdn -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- bootstrap js -->
+  <script src="vendor/js/bootstrap.bundle.min.js"></script>  
+  <!-- shop js -->
+  <script src="assets/js/shop.js"></script>
+</body>
+</html>

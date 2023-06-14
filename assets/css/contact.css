@@ -1,0 +1,312 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    }
+    ul{
+    list-style-type: none ;
+    margin:0;
+    }
+    a{
+    text-decoration: none;
+    }
+    body{
+    font-family: 'Jost', sans-serif;
+    
+    }
+    ::selection{
+    background-color: black;
+    color:white;
+    }
+    
+    :root {
+        --glow-color: hsl(281, 100%, 69%);
+      }
+      
+      
+    
+    
+    /* End global */
+
+
+/* start loading */
+       
+
+ .loading{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background-color: white;
+    z-index:9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(1);
+    transform-origin:0% 100%;
+    transition: 1s;
+    
+  }
+      
+  .loader {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    top:35%;
+    perspective: 800px;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #1e0024;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #000;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #BA68C8;
+  }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
+      
+      /* End loading */
+
+        /* start back */
+.back{
+    width:100%;
+    margin-top: 74px;
+    background-image: url('../img/aroup-4.jpg');
+    height:40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:20%;
+    
+    }
+    
+    .back h1{
+    font-size: 50px;
+    color:black;
+    }
+    @media screen and (max-width:767px) {
+        .back h1{
+        font-size:30px;
+        }
+        .back{
+            height:20vh;
+        }  
+       
+    }
+    .back .title{
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    @media screen and (max-width:767px) {
+        .back .title{
+            left:55%;
+        }
+    }
+    .back .title a{
+    color: black;
+    font-size: 15px;
+    } 
+    .back .title i{
+    color: #899BBB;
+    font-size: 13px;
+    }
+    .back .title span{
+    color: rgb(134,134,134);
+    }
+        /* End back */
+
+        /* scroll to top */
+      #progress {
+        position: fixed;
+        bottom: 95px;
+        right: 30px;
+        height: 46px;
+        width: 46px;
+        /* display: none; */
+        place-items: center;
+        border-radius: 50%;
+        /* box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2); */
+        cursor: pointer;
+        border:1px solid #fff;
+        
+        
+      }
+     
+      #progress-value {
+        display: block;
+        height:40px;
+        width:40px;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+      
+      }
+      @media screen and (max-width:600px){
+        #progress {
+          bottom:65px;
+          right:10px;
+          width:36px;
+          height:36px;
+        }
+        #progress-value{
+          width:30px;
+          height:30px;
+        }
+      }
+      #progress-value i{
+        font-size:14px;
+        transition:0.5s;
+       
+      }
+      #progress-value:hover i{
+        position: absolute;
+        top:10px;
+      }
+
+      /* start contact */
+      .contact form label{
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom:10px;
+        position: relative;
+        width:100%;
+       
+      }
+      .contact form input {
+        padding:10px 20px;
+        height:50px;
+        line-height:50px;
+
+      }
+      .contact form button{
+        background-color: #000;
+        color: white;
+        padding:13px 60px;
+    
+      }
+      .contact form .email,.contact form .name,.contact form .phone{
+        width:40%;
+      }
+      @media screen and (max-width:767px) {
+        .contact form .email,.contact form .name,.contact form .phone{
+            width:100%;
+            margin-bottom: 15px;
+        }
+        .contact form button{
+            margin-bottom:50px;
+        }
+    
+      }
+      @media screen and (min-width:1200px) {
+        .contact .container-fluid{
+            width:90%;
+        }
+      }
+      .contact form input:focus,.contact form textarea:focus{
+        border-color:#000;
+        box-shadow:none;
+      }
+      
+      .contact form ::placeholder{
+        font-size: 14px;
+        color:rgb(190, 188, 188);
+       
+
+      }
+    .contact form .name label::after, .contact form .email label::after{
+     position: absolute;
+    content: "*";
+    color: red;
+    right:10px;
+    bottom:-50px;
+    font-size:18px;
+    z-index:99;
+   
+}
+.contact .contact-info h4{
+    font-size: 20px;
+    color: #000;
+}
+.contact .contact-info p{
+    color: #000;
+    font-size: 14px;
+}
+.contact .contacti::after{
+content: "";
+position:absolute;
+width:100%;
+height:1px;
+background-color:rgb(204, 202, 202);
+left:0;
+bottom:-50%;
+}
+.contact .contact-info .icons a{
+color: #000;
+}
+.contact .contact-info .icons i{
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left:6px;
+    transition: 0.5s;
+}
+.contact .contact-info .icons i:hover{
+    border-color:#000;
+}
+      /* End contact */
